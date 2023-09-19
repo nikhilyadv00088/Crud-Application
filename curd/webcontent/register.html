@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.registration-form{
+	background-color: bisque;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 570px;
+    width: 600px;
+}
+.registration-form h1{
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16px 0;
+}
+.registration-form p{
+    font-size: 15px;
+    margin: 10px 50px;
+}
+.registration-form input{
+	position: center;
+    font-size: 10px;
+    padding: 10px 6px;
+    margin-left: 50px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+}
+.registration-form #one input{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 165px;
+    padding: 8px 12px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: green;
+}
+.registration-form #one input:hover{
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration</h1>
+        <form action="register" method="post">
+            <p>Full Name:</p>
+            <input type="text" name="newusername" placeholder="Enter Full Name">
+            <p>User ID:</p>
+            <input type="text" name="newuserid" placeholder="Enter User ID">
+            <p>Email:</p>
+            <input type="text" name="newuseremail" placeholder="Enter Email">
+            <p>Age:</p>
+            <input type="text" name="newuserage" placeholder="Enter Age">
+            <p>Password:</p>
+            <input type="password" name="newuserpassword" placeholder="Enter Password">
+            <p>Repeat Password:</p>
+            <input type="password" name="repeatpassword" placeholder="Enter Password Again">
+            <div id="one">
+            	<input type="submit" value="Register"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
